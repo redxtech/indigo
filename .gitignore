@@ -1,0 +1,7 @@
+# built binary
+indigo
+
+# dotenv environment variables file
+.env
+.env.test
+

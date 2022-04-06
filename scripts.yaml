@@ -1,0 +1,13 @@
+scripts:
+  run:
+    desc: Run the script without any prefilled args.
+    cmd: deno run --allow-env --allow-net --allow-read ./src/indigo.ts
+  test:
+    desc: Run the status sub command on the cgy server.
+    cmd: deno run --allow-env --allow-net --allow-read ./src/indigo.ts status cgy thing
+  build:
+    desc: Build the script.
+    cmd: deno compile --allow-env --allow-net --allow-read ./src/indigo.ts
+  install:
+    desc: Install the script.
+    cmd: deno install --allow-env --allow-net --allow-read ./src/indigo.ts
