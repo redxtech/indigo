@@ -1,0 +1,14 @@
+{
+  "servers": [
+    {
+      "name": "cgy",
+      "url": "https://dunn-calgary.indigodomo.net",
+      "token": "c0c43914-2f81-41ab-af8b-72065de2f557"
+    },
+    {
+      "name": "cnm",
+      "url": "https://dunn-canmore.indigodomo.net",
+      "token": "da2c73af-b06b-4980-bdc0-12b1414fe5d4"
+    }
+  ]
+}

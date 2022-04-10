@@ -1,5 +1,6 @@
 # built binary
 indigo
+indigo_config.json
 
 # dotenv environment variables file
 .env

@@ -1,16 +1,25 @@
 scripts:
   do:
     desc: Run the script without any prefilled args.
-    cmd: deno run --allow-env --allow-net --allow-read ./src/indigo.ts
+    cmd: deno run --allow-env --allow-net --allow-read ./src/main.ts
   list:
-    desc: List all devices.
-    cmd: deno run --allow-env --allow-net --allow-read ./src/indigo.ts list cgy
+    desc: List all devices on the cgy server.
+    cmd: deno run --allow-env --allow-net --allow-read ./src/main.ts list cgy
   status:
     desc: Run the status sub command on the cgy server.
-    cmd: deno run --allow-env --allow-net --allow-read ./src/indigo.ts status cgy
+    cmd: deno run --allow-env --allow-net --allow-read ./src/main.ts status cgy
+  on:
+    desc: Turn on a device on the cgy server
+    cmd: deno run --allow-env --allow-net --allow-read ./src/main.ts on cgy
+  off:
+    desc: Turn off a device on the cgy server
+    cmd: deno run --allow-env --allow-net --allow-read ./src/main.ts off cgy
+  toggle:
+    desc: Toggle a device on the cgy server
+    cmd: deno run --allow-env --allow-net --allow-read ./src/main.ts toggle cgy
   build:
     desc: Build the script.
-    cmd: deno compile --allow-env --allow-net --allow-read ./src/indigo.ts
+    cmd: deno compile --allow-env --allow-net --allow-read --output indigo --import-map ./import_map.json ./src/main.ts
   install:
     desc: Install the script.
-    cmd: deno install --allow-env --allow-net --allow-read ./src/indigo.ts
+    cmd: deno install --allow-env --allow-net --allow-read ./src/main.ts
